@@ -55,6 +55,22 @@ The main goal of SIMBIK is to digitize and simplify the thesis supervision workf
 - Access via browser: `http://localhost/simbik`
 
 ---
+## 🔐 Dummy Login Accounts
+Use the following dummy accounts to log in and explore the system:
+
+🛠 Admin
+Email: admin@gmail.com
+Password: admin
+
+👨‍🎓 Student
+Email: 21208006@unima.ac.id
+Password: 21208006
+
+👨‍🏫 Supervisor (Lecturer)
+Email: 0022036101@unima.ac.id
+Password: 0022036101
+
+---
 
 ## 📄 License
 
