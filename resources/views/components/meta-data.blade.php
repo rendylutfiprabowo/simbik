@@ -1,24 +1,24 @@
-@props(['title', 'description' => 'SI Bimbingan Skripsi PTIK UNIMA', 'csrfToken', 'baseurl'])
+@props(['title', 'description' => 'SI Bimbingan Skripsi PTIK UNILA', 'csrfToken', 'baseurl'])
 
 <!-- Essential Meta Tags -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="csrf-token" content="{{ $csrfToken }}">
 <meta name="description" content="{{ $description }}" />
-<meta name="keywords" content="Unima, Fakultas Teknik, PTIK, Manado, Tondano">
+<meta name="keywords" content="UNILA, Fakultas Teknik, PTIK, Manado, Tondano">
 <meta name="author" content="PTIK">
 
 <!-- Open Graph Meta Tags for Social Sharing -->
-<meta property="og:title" content="{{ $title }} - SI Bimbingan Skripsi PTIK UNIMA">
+<meta property="og:title" content="{{ $title }} - SI Bimbingan Skripsi PTIK UNILA">
 <meta property="og:description" content="{{ $description }}">
 <meta property="og:url" content="{{ url()->current() }}">
 <meta property="og:type" content="website">
 
 <!-- Twitter Card Meta Tags -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ $title }} - SI Bimbingan Skripsi PTIK UNIMA">
+<meta name="twitter:title" content="{{ $title }} - SI Bimbingan Skripsi PTIK UNILA">
 <meta name="twitter:description" content="{{ $description }}">
-<meta name="twitter:site" content="@PTIKUNIMA">
+<meta name="twitter:site" content="@PTIKUNILA">
 
 <!-- Mobile App Configuration -->
 <link rel="manifest" href="{{$baseurl}}/assets/manifest.json">
@@ -27,7 +27,7 @@
 <meta name="msapplication-TileImage" content="{{$baseurl}}/assets/images/ms-icon-144x144.png">
 
 <!-- Title -->
-<title>{{ $title }} - SI Bimbingan Skripsi PTIK UNIMA</title>
+<title>{{ $title }} - SI Bimbingan Skripsi PTIK UNILA</title>
 
 <!-- Favicon and App Icons -->
 <link rel="apple-touch-icon" sizes="57x57" href="{{$baseurl}}/assets/images/apple-icon-57x57.png">

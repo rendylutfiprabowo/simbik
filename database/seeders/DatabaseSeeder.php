@@ -31,7 +31,7 @@ class DatabaseSeeder extends Seeder
         // Seeder untuk 10 data user dan dosen
         for ($i = 1; $i <= 5; $i++) {
             $gender = rand(1, 2);
-            
+
             $uuid = Str::uuid();
             $nip = generateNIP($i, $gender);
             $nidn = generateNIDN();
@@ -40,7 +40,7 @@ class DatabaseSeeder extends Seeder
                 'id' => $uuid,
                 'name' => Factory::create()->name($gender == 1 ? 'male' : 'female'),
                 'username' => $nidn,
-                'email' => $nidn . '@unima.ac.id',
+                'email' => $nidn . '@unila.ac.id',
                 'password' => bcrypt($nidn),
                 'role' => 'lecturer',
             ]);
@@ -67,7 +67,7 @@ class DatabaseSeeder extends Seeder
             $user = User::create([
                 'id' => $uuid,
                 'name' => Factory::create()->name($gender == 1 ? 'male' : 'female'),
-                'email' => $nim . '@unima.ac.id',
+                'email' => $nim . '@unila.ac.id',
                 'username' => $nim,
                 'password' => bcrypt($nim),
                 'role' => 'student',

@@ -41,7 +41,7 @@ const formEmailHelp = document.querySelector("#form-email-help");
 if (emailInput && nimInput && formEmailHelp) {
     nimInput.addEventListener("change", function (e) {
         const nim = e.target.value;
-        const defaultEmailDomain = "@unima.ac.id";
+        const defaultEmailDomain = "@unila.ac.id";
         emailInput.value = nim + defaultEmailDomain;
 
         formEmailHelp.innerHTML = `<small>Email Otomatis Diganti Menjadi ${emailInput.value}. Silahkan Diganti Jika Kurang Sesuai.</small>`;

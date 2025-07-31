@@ -210,12 +210,12 @@
     <div class="container">
         <header>
             <p class="text-16pt font-medium">KEMENTRIAN PENDIDIKAN, KEBUDAYAAN, <br> RISET DAN TEKNOLOGI</p>
-            <p class="text-16pt"><strong>UNIVERSITAS NEGERI MANADO</strong></p>
-            <p class="text-16pt"><strong>FAKULTAS TEKNIK</strong></p>
-            <p><strong>JURUSAN PENDIDIKAN TEKNOLOGI INFORMASI DAN KOMUNIKASI</strong></p>
-            <p>Alamat : Kampus UNIMA Tondano 95618</p>
-            <p>Laman : <a href="https://ptik.unima.ac.id">https://ptik.unima.ac.id</a></p>
-            <img src="/logo-unima.png" alt="Logo Unima" class="logo">
+            <p class="text-16pt"><strong>UNIVERSITAS LAMPUNG</strong></p>
+            <p class="text-16pt"><strong>FAKULTAS MIPA</strong></p>
+            <p><strong>JURUSAN ILMU KOMPUTER</strong></p>
+            <p>Alamat : Kampus UNILA Bandar Lampung</p>
+            <p>Laman : <a href="https://https://www.unila.ac.id/">https://https://www.unila.ac.id/</a></p>
+            <img src="/logo-unila.png" alt="Logo Unila" class="logo">
         </header>
 
         <div>

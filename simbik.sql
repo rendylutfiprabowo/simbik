@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 03 Des 2024 pada 14.56
--- Versi server: 10.4.32-MariaDB
--- Versi PHP: 8.2.12
+-- Waktu pembuatan: 31 Jul 2025 pada 01.12
+-- Versi server: 10.4.28-MariaDB
+-- Versi PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -98,6 +98,13 @@ CREATE TABLE `guidances` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data untuk tabel `guidances`
+--
+
+INSERT INTO `guidances` (`id`, `student_id`, `thesis_id`, `lecturer_id`, `topic`, `explanation`, `thesis_file_review`, `lecturer_notes`, `schedule`, `guidance_number`, `status_request`, `created_at`, `updated_at`) VALUES
+('9f8155c7-9bfb-47be-b21e-0243ef92c341', 'b4bc9e9a-4c59-35d8-a78b-4fdafda2aed7', '9f8155c6-5d80-40d0-ab2e-36107e4eace0', '54cce962-d5d6-336c-990f-caf2c4d0b5f6', 'WEBSITE', NULL, NULL, NULL, '2025-08-04 19:50:00', 1, 'pending', '2025-07-29 01:39:47', '2025-07-29 01:39:47');
 
 -- --------------------------------------------------------
 
@@ -246,8 +253,9 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('K10mGrTgKGhSggmdjQOyAreapM9to1oDG9vlfMh2', '16f847d5-e85d-401f-9840-7826d930e826', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoiRGVjYldUYWp3Mkxqd1JyQkJFRDljRnpxRGM0RElXc3lCQUsxVTYxTiI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9kYXNoYm9hcmQiO31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7czozNjoiMTZmODQ3ZDUtZTg1ZC00MDFmLTk4NDAtNzgyNmQ5MzBlODI2IjtzOjE0OiJ0b2FzdERpc3BsYXllZCI7YjoxO30=', 1733233744),
-('poe321DjFTFb5Vj4BayNzpRFbG2tM0Zqc48xPSjC', '16f847d5-e85d-401f-9840-7826d930e826', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoieGdCb0ZUTVNhZVVBTEVUUVdsb2hSQmVqcFozeUIyZ0lWSzVhTjI2dCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9wZW5nYWp1YW4tdWppYW4tbWFoYXNpc3dhIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO3M6MzY6IjE2Zjg0N2Q1LWU4NWQtNDAxZi05ODQwLTc4MjZkOTMwZTgyNiI7czoxNDoidG9hc3REaXNwbGF5ZWQiO2I6MTtzOjU6ImFsZXJ0IjthOjA6e319', 1733234124);
+('7itDmDjF3ZVOib3BKX0WCBsImFjkmdZ1aNgyMKF4', '53209626-2c66-4955-844c-4eba7e6ac96e', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoiendyNFYyMktjRDEzMmZFRkJHbnhEc1diMTVTaGNhcnVHSmhTSXN5QSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6ODA6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hdHVyLWphZHdhbC1iaW1iaW5nYW4vOWY4MTU1YzctOWJmYi00N2JlLWIyMWUtMDI0M2VmOTJjMzQxIjt9czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO3M6MzY6IjUzMjA5NjI2LTJjNjYtNDk1NS04NDRjLTRlYmE3ZTZhYzk2ZSI7czoxNDoidG9hc3REaXNwbGF5ZWQiO2I6MTt9', 1753779085),
+('egYF4R6ZUIi03PgYht2BSjRTtirGfeCHcx6kzNNW', '3631fffb-780f-458f-a3c4-91159b8f9cc6', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiN1RwZm9UcVBKQjR2bzFQZHpZaDdRTFljdzgwT3R0NXJFS0hBdmw1MiI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MTg6e2k6MDtzOjE4OiJhbGVydC5kZWxldGUudGl0bGUiO2k6MTtzOjE3OiJhbGVydC5kZWxldGUudGV4dCI7aToyO3M6MjM6ImFsZXJ0LmRlbGV0ZS5iYWNrZ3JvdW5kIjtpOjM7czoxODoiYWxlcnQuZGVsZXRlLndpZHRoIjtpOjQ7czoyMzoiYWxlcnQuZGVsZXRlLmhlaWdodEF1dG8iO2k6NTtzOjIwOiJhbGVydC5kZWxldGUucGFkZGluZyI7aTo2O3M6Mjg6ImFsZXJ0LmRlbGV0ZS5zaG93Q2xvc2VCdXR0b24iO2k6NztzOjMwOiJhbGVydC5kZWxldGUuY29uZmlybUJ1dHRvblRleHQiO2k6ODtzOjI5OiJhbGVydC5kZWxldGUuY2FuY2VsQnV0dG9uVGV4dCI7aTo5O3M6Mjk6ImFsZXJ0LmRlbGV0ZS50aW1lclByb2dyZXNzQmFyIjtpOjEwO3M6MjQ6ImFsZXJ0LmRlbGV0ZS5jdXN0b21DbGFzcyI7aToxMTtzOjI5OiJhbGVydC5kZWxldGUuc2hvd0NhbmNlbEJ1dHRvbiI7aToxMjtzOjMxOiJhbGVydC5kZWxldGUuY29uZmlybUJ1dHRvbkNvbG9yIjtpOjEzO3M6MTc6ImFsZXJ0LmRlbGV0ZS5pY29uIjtpOjE0O3M6MzI6ImFsZXJ0LmRlbGV0ZS5zaG93TG9hZGVyT25Db25maXJtIjtpOjE1O3M6Mjc6ImFsZXJ0LmRlbGV0ZS5hbGxvd0VzY2FwZUtleSI7aToxNjtzOjMwOiJhbGVydC5kZWxldGUuYWxsb3dPdXRzaWRlQ2xpY2siO2k6MTc7czoxMjoiYWxlcnQuZGVsZXRlIjt9czozOiJuZXciO2E6MDp7fX1zOjk6Il9wcmV2aW91cyI7YToxOntzOjM6InVybCI7czozMToiaHR0cDovLzEyNy4wLjAuMTo4MDAwL2JpbWJpbmdhbiI7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtzOjM2OiIzNjMxZmZmYi03ODBmLTQ1OGYtYTNjNC05MTE1OWI4ZjljYzYiO3M6NToiYWxlcnQiO2E6MDp7fXM6MTQ6InRvYXN0RGlzcGxheWVkIjtiOjE7fQ==', 1753779441),
+('MHNmqf1U7z7CcTLxfdEAGhAKprd5AY3O93hhNU9n', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiZDE0OGIyQ1kxaU85d1h6REFPemhERjJwRUMzZ0RiNzgzMkNvODNnOSI7czozOiJ1cmwiO2E6MTp7czo4OiJpbnRlbmRlZCI7czoyNzoiaHR0cDovLzEyNy4wLjAuMTo4MDAwL2Rvc2VuIjt9czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9sb2dpbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1753778244);
 
 -- --------------------------------------------------------
 
@@ -281,7 +289,7 @@ INSERT INTO `students` (`id`, `user_id`, `lecturer_id_1`, `lecturer_id_2`, `nim`
 ('6a9b2b25-327c-307b-a1cd-35248dabaaf2', '42f33c43-5701-43f6-8048-aef4493c11e0', '770712e1-1198-33ab-90d6-5cc7ce860561', '54cce962-d5d6-336c-990f-caf2c4d0b5f6', '21208005', 2021, 'Multimedia', NULL, NULL, '2024-12-03 06:28:45', '2024-12-03 06:28:45'),
 ('88f7af9c-afda-3aef-8db3-9d1f8c582655', 'e6cdb50c-7df9-4c01-8d88-0ba1d7bb6c50', 'b31861e5-e24d-35c8-aa10-61ae567ed493', '770712e1-1198-33ab-90d6-5cc7ce860561', '21208008', 2021, 'TKJ', NULL, NULL, '2024-12-03 06:28:46', '2024-12-03 06:28:46'),
 ('a879fe6c-6ee6-3526-b65a-d65fa73a4efe', '79f36c83-2043-481e-b3f3-56c9188ac8bd', '770712e1-1198-33ab-90d6-5cc7ce860561', '54cce962-d5d6-336c-990f-caf2c4d0b5f6', '21208001', 2021, 'RPL', NULL, NULL, '2024-12-03 06:28:44', '2024-12-03 06:28:44'),
-('b4bc9e9a-4c59-35d8-a78b-4fdafda2aed7', '3631fffb-780f-458f-a3c4-91159b8f9cc6', '54cce962-d5d6-336c-990f-caf2c4d0b5f6', '88dc9576-0b80-365b-b355-c7ca877bbcfb', '21208006', 2021, 'TKJ', NULL, NULL, '2024-12-03 06:28:45', '2024-12-03 06:28:45'),
+('b4bc9e9a-4c59-35d8-a78b-4fdafda2aed7', '3631fffb-780f-458f-a3c4-91159b8f9cc6', '54cce962-d5d6-336c-990f-caf2c4d0b5f6', '88dc9576-0b80-365b-b355-c7ca877bbcfb', '21208006', 2021, 'TKJ', NULL, NULL, '2024-12-03 06:28:45', '2025-07-28 21:22:05'),
 ('d0d78047-9835-3418-bd8a-07f28db559bf', 'd2289167-e3b0-40a6-b17e-4eea86da67e3', '54cce962-d5d6-336c-990f-caf2c4d0b5f6', 'b31861e5-e24d-35c8-aa10-61ae567ed493', '21208003', 2021, 'RPL', NULL, NULL, '2024-12-03 06:28:45', '2024-12-03 06:28:45'),
 ('e62f6da9-8d4f-3522-a1d4-4d2909191e12', '3ebe8138-6f83-4ed9-84a2-9d7e0c53673f', '88dc9576-0b80-365b-b355-c7ca877bbcfb', '88dc9576-0b80-365b-b355-c7ca877bbcfb', '21208007', 2021, 'RPL', NULL, NULL, '2024-12-03 06:28:45', '2024-12-03 06:28:45');
 
@@ -301,6 +309,13 @@ CREATE TABLE `theses` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data untuk tabel `theses`
+--
+
+INSERT INTO `theses` (`id`, `student_id`, `title`, `file`, `approval_lecturer_1`, `approval_lecturer_2`, `created_at`, `updated_at`) VALUES
+('9f8155c6-5d80-40d0-ab2e-36107e4eace0', 'b4bc9e9a-4c59-35d8-a78b-4fdafda2aed7', 'RANCANG BANGUN', '1753778383-21208006.pdf', 'pending', 'pending', '2025-07-29 01:39:47', '2025-07-29 01:39:47');
 
 -- --------------------------------------------------------
 
@@ -327,22 +342,22 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `username`, `email`, `email_verified_at`, `password`, `role`, `photo`, `remember_token`, `created_at`, `updated_at`) VALUES
-('16f847d5-e85d-401f-9840-7826d930e826', 'admin', 'admin', 'admin@gmail.com', '2024-12-03 06:28:43', '$2y$12$ovsrAOjXwcr33ywtBD.PfOmTTAm3fZQhffkxEWvNl5fBvwxqDh3g.', 'admin', NULL, 'dtD2BOmAt5', '2024-12-03 06:28:43', '2024-12-03 06:35:44'),
-('2d71cf7d-93d2-4a2c-96b5-3891dd87e065', 'Jarrett Lowe', '0009047103', '0009047103@unima.ac.id', NULL, '$2y$12$G6q7p1efb5NP4AJPoo66yOmUpk6AKtQ7Cn8fDIya3YdUvpZ.ujsiC', 'lecturer', NULL, NULL, '2024-12-03 06:28:44', '2024-12-03 06:28:44'),
-('3631fffb-780f-458f-a3c4-91159b8f9cc6', 'Jeremie Kulas', '21208006', '21208006@unima.ac.id', NULL, '$2y$12$zRG0ofBEirTSzm2ytCVnz.f95ihgva0dX7OseFx2Wrfdq1OFwukLm', 'student', NULL, NULL, '2024-12-03 06:28:45', '2024-12-03 06:28:45'),
-('3ebe8138-6f83-4ed9-84a2-9d7e0c53673f', 'Lyda Reinger', '21208007', '21208007@unima.ac.id', NULL, '$2y$12$ncrrVcqCxdtN.OIMnqlTmupsv8GFxwb8XQRXOhI6GAAJSVMEH2kLm', 'student', NULL, NULL, '2024-12-03 06:28:45', '2024-12-03 06:28:45'),
-('42f33c43-5701-43f6-8048-aef4493c11e0', 'Mr. Ignacio Schamberger MD', '21208005', '21208005@unima.ac.id', NULL, '$2y$12$DE/TA90XICHqvfl2kuXzaeGwndmeaQGEqgoy64hgCeFw/Mq1lcGAG', 'student', NULL, NULL, '2024-12-03 06:28:45', '2024-12-03 06:28:45'),
-('53209626-2c66-4955-844c-4eba7e6ac96e', 'Grady Kuvalis', '0022036101', '0022036101@unima.ac.id', NULL, '$2y$12$ovujHJeqcHR8TyW6ELvlLekt.ax0Jg/R2YBqfC2NF2pxuCe5HRur6', 'lecturer', NULL, NULL, '2024-12-03 06:28:44', '2024-12-03 06:28:44'),
-('5a9ea1df-b80d-486b-994b-0e83b8fa5ec7', 'Isac Durgan', '0021069404', '0021069404@unima.ac.id', NULL, '$2y$12$mjBspCQswVqeo3kZMgrz2.nE6CmF49AwnpKar1/MyNwBbzYhQVf.2', 'lecturer', NULL, NULL, '2024-12-03 06:28:44', '2024-12-03 06:28:44'),
-('79f36c83-2043-481e-b3f3-56c9188ac8bd', 'Mr. Shane Harvey', '21208001', '21208001@unima.ac.id', NULL, '$2y$12$uG81NRmTsRAlmhElkUDvcOtVVc3pt62FcrECZ/Z.oHoO4C6dmL8NW', 'student', NULL, NULL, '2024-12-03 06:28:44', '2024-12-03 06:28:44'),
-('ae8092e8-a827-4fac-ac00-55f174f0bf4c', 'Mrs. Gail Leuschke', '21208004', '21208004@unima.ac.id', NULL, '$2y$12$TInzEXSi3ZAAjJTOsxg//Omr07.4St.LA5Y0GpKpX5V3IMbFW15zG', 'student', NULL, NULL, '2024-12-03 06:28:45', '2024-12-03 06:28:45'),
-('bd5eba77-2b34-49b7-a9ae-e1a31f15656a', 'Monty Kuphal', '21208010', '21208010@unima.ac.id', NULL, '$2y$12$X6e/hA4s3LM1f97RvAlFKeEKaoGsnWnt2.I9.vK5LHMZzchjZ8EWe', 'student', NULL, NULL, '2024-12-03 06:28:46', '2024-12-03 06:28:46'),
-('d2289167-e3b0-40a6-b17e-4eea86da67e3', 'Jack Dickinson', '21208003', '21208003@unima.ac.id', NULL, '$2y$12$AzWRKEsw8Mj/WMzw4FA7F.OnVEPEXgI7I0rMQIw4pfxYfFJe0CcV.', 'student', NULL, NULL, '2024-12-03 06:28:45', '2024-12-03 06:28:45'),
-('e6243ea9-bf78-409d-b94f-cf6ea00b887b', 'Winona Larkin V', '0009106608', '0009106608@unima.ac.id', NULL, '$2y$12$BhvPE08uxj5QSgD8/BPJHuEj6uur1bC3.A49CtiV7TSSa8sUCY/Ri', 'lecturer', NULL, NULL, '2024-12-03 06:28:44', '2024-12-03 06:28:44'),
-('e6cdb50c-7df9-4c01-8d88-0ba1d7bb6c50', 'Prof. Brigitte Jenkins Sr.', '21208008', '21208008@unima.ac.id', NULL, '$2y$12$SUhpZpFjIcMtHGI77q8qseie.1J/vWpL.X.v8jyXuLbSMlPk0B8h.', 'student', NULL, NULL, '2024-12-03 06:28:46', '2024-12-03 06:28:46'),
-('ed19ccee-cd63-4b11-8e62-54f02298fb2c', 'Mr. Alexys Little Jr.', '0006035110', '0006035110@unima.ac.id', NULL, '$2y$12$vKQVTGaC3AJhxgVsavMlTuX3sDEwgSOaK3wpYr6oZ0jFruP4X8.PG', 'lecturer', NULL, NULL, '2024-12-03 06:28:43', '2024-12-03 06:28:43'),
-('f6da4f1a-1251-4459-bb34-1000e90bf744', 'Gus Schaefer', '21208009', '21208009@unima.ac.id', NULL, '$2y$12$bDQm3NeVlJDjMPdqa5uQVe968xfLdBmhjPOwYSrmKwOIIA.eOLvF6', 'student', NULL, NULL, '2024-12-03 06:28:46', '2024-12-03 06:28:46'),
-('fcf57d54-d8ce-423d-9044-e622c34d7590', 'Sydni Wehner', '21208002', '21208002@unima.ac.id', NULL, '$2y$12$71x2BNW3vzgqJWRh4Z1nieurLl/RZIHRxjkkjBA/Z0FY09jy77QSy', 'student', NULL, NULL, '2024-12-03 06:28:45', '2024-12-03 06:28:45');
+('16f847d5-e85d-401f-9840-7826d930e826', 'admin', 'admin', 'admin@gmail.com', '2024-12-03 06:28:43', '$2y$12$ovsrAOjXwcr33ywtBD.PfOmTTAm3fZQhffkxEWvNl5fBvwxqDh3g.', 'admin', NULL, 'rXabghNyg5OuMZ3DaIcBRE7WnfgHZzb1NRGMVJkLEOwwrRlg2qOKOC6SuZmr', '2024-12-03 06:28:43', '2024-12-03 06:35:44'),
+('2d71cf7d-93d2-4a2c-96b5-3891dd87e065', 'Jarrett Lowe', '0009047103', '0009047103@unila.ac.id', NULL, '$2y$12$G6q7p1efb5NP4AJPoo66yOmUpk6AKtQ7Cn8fDIya3YdUvpZ.ujsiC', 'lecturer', NULL, 'AmQ2JAg0ZPQd0GZ4ugJI0PZY8cjNXsQSWZXXBgZ3MT74M2tp50bSl0qCpb8c', '2024-12-03 06:28:44', '2024-12-03 06:28:44'),
+('3631fffb-780f-458f-a3c4-91159b8f9cc6', 'Jeremie Kulas', '21208006', '21208006@unila.ac.id', NULL, '$2y$12$zRG0ofBEirTSzm2ytCVnz.f95ihgva0dX7OseFx2Wrfdq1OFwukLm', 'student', '1753762926_mahasiswa_21208006.jpg', 'yvHAlaEC4W7aJSC6ATN7T5Lm5VL8e5DeEqAZ33Mtdm06u8rRaqcsZkAjvGnu', '2024-12-03 06:28:45', '2025-07-28 21:22:06'),
+('3ebe8138-6f83-4ed9-84a2-9d7e0c53673f', 'Lyda Reinger', '21208007', '21208007@unila.ac.id', NULL, '$2y$12$ncrrVcqCxdtN.OIMnqlTmupsv8GFxwb8XQRXOhI6GAAJSVMEH2kLm', 'student', NULL, NULL, '2024-12-03 06:28:45', '2024-12-03 06:28:45'),
+('42f33c43-5701-43f6-8048-aef4493c11e0', 'Mr. Ignacio Schamberger MD', '21208005', '21208005@unila.ac.id', NULL, '$2y$12$DE/TA90XICHqvfl2kuXzaeGwndmeaQGEqgoy64hgCeFw/Mq1lcGAG', 'student', NULL, NULL, '2024-12-03 06:28:45', '2024-12-03 06:28:45'),
+('53209626-2c66-4955-844c-4eba7e6ac96e', 'Grady Kuvalis', '0022036101', '0022036101@unila.ac.id', NULL, '$2y$12$ovujHJeqcHR8TyW6ELvlLekt.ax0Jg/R2YBqfC2NF2pxuCe5HRur6', 'lecturer', NULL, 'NAlBMRT7ACLYcGuvConCxKj2m7FrkDyAKxflRcFkJ30ZWVOXzq4mjKHivo8Y', '2024-12-03 06:28:44', '2024-12-03 06:28:44'),
+('5a9ea1df-b80d-486b-994b-0e83b8fa5ec7', 'Isac Durgan', '0021069404', '0021069404@unila.ac.id', NULL, '$2y$12$mjBspCQswVqeo3kZMgrz2.nE6CmF49AwnpKar1/MyNwBbzYhQVf.2', 'lecturer', NULL, NULL, '2024-12-03 06:28:44', '2024-12-03 06:28:44'),
+('79f36c83-2043-481e-b3f3-56c9188ac8bd', 'Mr. Shane Harvey', '21208001', '21208001@unila.ac.id', NULL, '$2y$12$uG81NRmTsRAlmhElkUDvcOtVVc3pt62FcrECZ/Z.oHoO4C6dmL8NW', 'student', NULL, NULL, '2024-12-03 06:28:44', '2024-12-03 06:28:44'),
+('ae8092e8-a827-4fac-ac00-55f174f0bf4c', 'Mrs. Gail Leuschke', '21208004', '21208004@unila.ac.id', NULL, '$2y$12$TInzEXSi3ZAAjJTOsxg//Omr07.4St.LA5Y0GpKpX5V3IMbFW15zG', 'student', NULL, NULL, '2024-12-03 06:28:45', '2024-12-03 06:28:45'),
+('bd5eba77-2b34-49b7-a9ae-e1a31f15656a', 'Monty Kuphal', '21208010', '21208010@unila.ac.id', NULL, '$2y$12$X6e/hA4s3LM1f97RvAlFKeEKaoGsnWnt2.I9.vK5LHMZzchjZ8EWe', 'student', NULL, NULL, '2024-12-03 06:28:46', '2024-12-03 06:28:46'),
+('d2289167-e3b0-40a6-b17e-4eea86da67e3', 'Jack Dickinson', '21208003', '21208003@unila.ac.id', NULL, '$2y$12$AzWRKEsw8Mj/WMzw4FA7F.OnVEPEXgI7I0rMQIw4pfxYfFJe0CcV.', 'student', NULL, NULL, '2024-12-03 06:28:45', '2024-12-03 06:28:45'),
+('e6243ea9-bf78-409d-b94f-cf6ea00b887b', 'Winona Larkin V', '0009106608', '0009106608@unila.ac.id', NULL, '$2y$12$BhvPE08uxj5QSgD8/BPJHuEj6uur1bC3.A49CtiV7TSSa8sUCY/Ri', 'lecturer', NULL, NULL, '2024-12-03 06:28:44', '2024-12-03 06:28:44'),
+('e6cdb50c-7df9-4c01-8d88-0ba1d7bb6c50', 'Prof. Brigitte Jenkins Sr.', '21208008', '21208008@unila.ac.id', NULL, '$2y$12$SUhpZpFjIcMtHGI77q8qseie.1J/vWpL.X.v8jyXuLbSMlPk0B8h.', 'student', NULL, NULL, '2024-12-03 06:28:46', '2024-12-03 06:28:46'),
+('ed19ccee-cd63-4b11-8e62-54f02298fb2c', 'Mr. Alexys Little Jr.', '0006035110', '0006035110@unila.ac.id', NULL, '$2y$12$vKQVTGaC3AJhxgVsavMlTuX3sDEwgSOaK3wpYr6oZ0jFruP4X8.PG', 'lecturer', NULL, NULL, '2024-12-03 06:28:43', '2024-12-03 06:28:43'),
+('f6da4f1a-1251-4459-bb34-1000e90bf744', 'Gus Schaefer', '21208009', '21208009@unila.ac.id', NULL, '$2y$12$bDQm3NeVlJDjMPdqa5uQVe968xfLdBmhjPOwYSrmKwOIIA.eOLvF6', 'student', NULL, NULL, '2024-12-03 06:28:46', '2024-12-03 06:28:46'),
+('fcf57d54-d8ce-423d-9044-e622c34d7590', 'Sydni Wehner', '21208002', '21208002@unila.ac.id', NULL, '$2y$12$71x2BNW3vzgqJWRh4Z1nieurLl/RZIHRxjkkjBA/Z0FY09jy77QSy', 'student', NULL, NULL, '2024-12-03 06:28:45', '2024-12-03 06:28:45');
 
 --
 -- Indexes for dumped tables
