@@ -14,16 +14,16 @@
 @endphp
 
 <head>
-    <x-meta-data :title="$title" csrfToken="{{ csrf_token() }}" :baseurl="$baseUrl"/>
+    <x-meta-data :title="$title" csrfToken="{{ csrf_token() }}" :baseurl="$baseUrl" />
 
-    <link rel="stylesheet" href="{{ $baseUrl }}/assets/vendor/fonts/boxicons.css">
-    <link rel="stylesheet" href="{{ $baseUrl }}/assets/css/demo.css">
-    <link rel="stylesheet" href="{{ $baseUrl }}/assets/vendor/css/core.css">
-    <link rel="stylesheet" href="{{ $baseUrl }}/assets/vendor/css/theme-default.css">
+    <link rel="stylesheet" href="{{ $baseUrl }}/public/assets/vendor/fonts/boxicons.css">
+    <link rel="stylesheet" href="{{ $baseUrl }}/public/assets/css/demo.css">
+    <link rel="stylesheet" href="{{ $baseUrl }}/public/assets/vendor/css/core.css">
+    <link rel="stylesheet" href="{{ $baseUrl }}/public/assets/vendor/css/theme-default.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/2.0.3/css/dataTables.dataTables.css">
-    <script src="{{ $baseUrl }}/assets/vendor/js/helpers.js"></script>
-    <script src="{{ $baseUrl }}/assets/js/config.js"></script>
-    <script src="{{ $baseUrl }}/assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="{{ $baseUrl }}/public/assets/vendor/js/helpers.js"></script>
+    <script src="{{ $baseUrl }}/public/assets/js/config.js"></script>
+    <script src="{{ $baseUrl }}/public/assets/vendor/libs/jquery/jquery.js"></script>
     <script src="https://kit.fontawesome.com/29057e6c17.js" crossorigin="anonymous"></script>
 </head>
 
@@ -113,13 +113,13 @@
 
     @include('sweetalert::alert')
 
-    <script src="{{ $baseUrl }}/assets/vendor/libs/popper/popper.js"></script>
-    <script src="{{ $baseUrl }}/assets/vendor/js/bootstrap.js"></script>
-    <script src="{{ $baseUrl }}/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-    <script src="{{ $baseUrl }}/assets/vendor/js/menu.js"></script>
-    <script src="{{ $baseUrl }}/assets/vendor/libs/apex-charts/apexcharts.js"></script>
-    <script src="{{ $baseUrl }}/assets/js/main.js"></script>
-    <script src="{{ $baseUrl }}/assets/js/app.js"></script>
+    <script src="{{ $baseUrl }}/public/assets/vendor/libs/popper/popper.js"></script>
+    <script src="{{ $baseUrl }}/public/assets/vendor/js/bootstrap.js"></script>
+    <script src="{{ $baseUrl }}/public/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="{{ $baseUrl }}/public/assets/vendor/js/menu.js"></script>
+    <script src="{{ $baseUrl }}/public/assets/vendor/libs/apex-charts/apexcharts.js"></script>
+    <script src="{{ $baseUrl }}/public/assets/js/main.js"></script>
+    <script src="{{ $baseUrl }}/public/assets/js/app.js"></script>
 
     <script src="https://cdn.datatables.net/2.0.3/js/dataTables.js"></script>
 

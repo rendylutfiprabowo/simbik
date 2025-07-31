@@ -14,11 +14,11 @@
 @endphp
 
 <head>
-    <x-meta-data :title="$title" csrfToken="{{ csrf_token() }}" :baseurl="$baseUrl"/>
+    <x-meta-data :title="$title" csrfToken="{{ csrf_token() }}" :baseurl="$baseUrl" />
 
-    <link rel="stylesheet" href="{{ $baseUrl }}/assets/vendor/css/core.css">
-    <link rel="stylesheet" href="{{ $baseUrl }}/assets/vendor/css/theme-default.css">
-    <link rel="stylesheet" href="{{ $baseUrl }}/assets/vendor/css/pages/page-misc.css">
+    <link rel="stylesheet" href="{{ $baseUrl }}/public/assets/vendor/css/core.css">
+    <link rel="stylesheet" href="{{ $baseUrl }}/public/assets/vendor/css/theme-default.css">
+    <link rel="stylesheet" href="{{ $baseUrl }}/public/assets/vendor/css/pages/page-misc.css">
 </head>
 
 <body>
@@ -28,7 +28,7 @@
         </div>
     </div>
 
-    <script src="{{ $baseUrl }}/assets/vendor/js/bootstrap.js"></script>
+    <script src="{{ $baseUrl }}/public/assets/vendor/js/bootstrap.js"></script>
 </body>
 
 </html>
