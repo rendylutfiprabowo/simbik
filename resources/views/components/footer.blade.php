@@ -6,7 +6,7 @@
                 document.write(new Date().getFullYear());
             </script>
             - Rendy Lutfi Prabowo
-            <a href="#" target="_blank" class="footer-link fw-medium">2025</a>
+            <a href="#" target="_blank" class="footer-link fw-medium"></a>
         </div>
     </div>
 </footer>
