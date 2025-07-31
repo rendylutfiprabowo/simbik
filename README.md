@@ -3,7 +3,7 @@
 **SIMBIK** (Sistem Informasi Bimbingan Skripsi) is a web-based information system designed to facilitate and streamline the thesis supervision process between students and their academic supervisors.
 
 This system allows both parties to manage supervision schedules, exchange files and feedback, track revision history, and maintain structured communication throughout the academic process.
-
+ 
 ---
 
 ## 🔧 Features
@@ -52,8 +52,16 @@ The main goal of SIMBIK is to digitize and simplify the thesis supervision workf
 
 5. **Run the application**  
 - Place the project in your local server root (e.g., `htdocs` or `public_html`)
-- Access via browser: `http://localhost/simbik`
+- Access via browser: `https://dodgerblue-eagle-374903.hostingersite.com`
 
+---
+
+## 🌐 Live Demo
+
+You can try the live version of the SIMBIK application here:  
+👉  https://dodgerblue-eagle-374903.hostingersite.com 
+
+> Note: Use the dummy login accounts below to access the system.
 ---
 ## 🔐 Dummy Login Accounts
 Use the following dummy accounts to log in and explore the system:
