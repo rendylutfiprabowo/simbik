@@ -16,13 +16,13 @@
 <head>
     <x-meta-data :title="$title" csrfToken="{{ csrf_token() }}" :baseurl="$baseUrl"/>
 
-    <link rel="stylesheet" href="{{ $baseUrl }}/assets/css/app.css">
-    <link rel="stylesheet" href="{{ $baseUrl }}/assets/css/demo.css">
-    <link rel="stylesheet" href="{{ $baseUrl }}/assets/vendor/fonts/boxicons.css">
-    <link rel="stylesheet" href="{{ $baseUrl }}/assets/vendor/css/core.css">
-    <link rel="stylesheet" href="{{ $baseUrl }}/assets/vendor/css/theme-default.css">
-    <script src="{{ $baseUrl }}/assets/vendor/js/helpers.js"></script>
-    <script src="{{ $baseUrl }}/assets/js/config.js"></script>
+    <link rel="stylesheet" href="{{ $baseUrl }}/public/assets/css/app.css">
+    <link rel="stylesheet" href="{{ $baseUrl }}/public/assets/css/demo.css">
+    <link rel="stylesheet" href="{{ $baseUrl }}/public/assets/vendor/fonts/boxicons.css">
+    <link rel="stylesheet" href="{{ $baseUrl }}/public/assets/vendor/css/core.css">
+    <link rel="stylesheet" href="{{ $baseUrl }}/public/assets/vendor/css/theme-default.css">
+    <script src="{{ $baseUrl }}/public/assets/vendor/js/helpers.js"></script>
+    <script src="{{ $baseUrl }}/public/assets/js/config.js"></script>
 </head>
 
 <body>
@@ -33,12 +33,12 @@
             </div>
         </div>
 
-        <script src="{{ $baseUrl }}/assets/vendor/libs/jquery/jquery.js"></script>
-        <script src="{{ $baseUrl }}/assets/vendor/libs/popper/popper.js"></script>
-        <script src="{{ $baseUrl }}/assets/vendor/js/bootstrap.js"></script>
-        <script src="{{ $baseUrl }}/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-        <script src="{{ $baseUrl }}/assets/vendor/js/menu.js"></script>
-        <script src="{{ $baseUrl }}/assets/js/main.js"></script>
+        <script src="{{ $baseUrl }}/public/assets/vendor/libs/jquery/jquery.js"></script>
+        <script src="{{ $baseUrl }}/public/assets/vendor/libs/popper/popper.js"></script>
+        <script src="{{ $baseUrl }}/public/assets/vendor/js/bootstrap.js"></script>
+        <script src="{{ $baseUrl }}/public/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+        <script src="{{ $baseUrl }}/public/assets/vendor/js/menu.js"></script>
+        <script src="{{ $baseUrl }}/public/assets/js/main.js"></script>
 
         <!-- Place this tag in your head or just before your close body tag. -->
         <script async defer src="https://buttons.github.io/buttons.js"></script>
