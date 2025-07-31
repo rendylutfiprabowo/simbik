@@ -71,11 +71,11 @@ Email: admin@gmail.com
 Password: admin
 
 👨‍🎓 Student
-Email: 21208006@unima.ac.id
+Email: 21208006@unila.ac.id
 Password: 21208006
 
 👨‍🏫 Supervisor (Lecturer)
-Email: 0022036101@unima.ac.id
+Email: 0022036101@unila.ac.id
 Password: 0022036101
 
 ---
